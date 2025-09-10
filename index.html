@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Givano Jendral Bantika — Kartu Nama Digital</title>
+  <style>
+    :root{
+      --bg1: #f0f6ff;
+      --card: #ffffff;
+      --accent: #6c8ef5;
+      --muted: #59607a;
+      --radius: 16px;
+      --maxw: 720px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(135deg,var(--bg1),#eaf7f1);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+      color:var(--muted);
+      min-height:100vh;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:var(--maxw);
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:24px;
+      align-items:start;
+    }
+
+    @media (max-width:880px){
+      .wrap{grid-template-columns:1fr; padding:12px}
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:24px;
+      box-shadow: 0 10px 30px rgba(40,50,80,0.07);
+    }
+
+    header .name{
+      font-size:28px;
+      margin:0 0 8px 0;
+      color:#1f2a63;
+      letter-spacing:0.2px;
+    }
+    header .tagline{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .section{
+      margin-top:18px;
+    }
+    .section h3{
+      margin:0 0 8px 0;
+      color:#24305f;
+      font-size:16px;
+    }
+    .section p{
+      margin:0;
+      line-height:1.6;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    .chips{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-top:10px;
+    }
+    .chip{
+      background: #f3f7ff;
+      color:#2b3a8a;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:13px;
+      box-shadow: inset 0 -2px 0 rgba(0,0,0,0.02);
+    }
+
+    /* sidebar */
+    .sidebar{
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+    }
+    .avatar{
+      width:100%;
+      border-radius:12px;
+      aspect-ratio:1/1;
+      background: linear-gradient(135deg,#6c8ef5,#9be7c4);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:34px;
+      box-shadow: 0 8px 20px rgba(40,50,80,0.08);
+    }
+    .contact{
+      display:flex;
+      gap:12px;
+      flex-direction:column;
+    }
+    .small{
+      font-size:13px;
+      color:var(--muted);
+    }
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      background:var(--accent);
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      text-align:center;
+    }
+
+    footer{
+      margin-top:18px;
+      font-size:12px;
+      color:#98a0b8;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <!-- main card -->
+    <section class="card">
+      <header>
+        <h1 class="name">Givano Jendral Bantika</h1>
+        <p class="tagline">Halo! Saya seorang pemikir yang suka menghibur dan berpikir secara logis dan mendalam.</p>
+      </header>
+
+      <div class="section">
+        <h3>Perkenalan Singkat</h3>
+        <p>
+          Nama saya <strong>Giovano Jendrio Bantika</strong>. Saya berasal dari <strong>Sulawesi Tengah</strong>.
+          Saya adalah warga negara Indonesia yang sangat menyukai berpikir secara logika dan memposisikan diri sebagai seorang filsuf amatir — suka merenung dan menggali pemikiran lebih dalam.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Minat & Hobi</h3>
+        <p>
+          Saya suka berpikir filosofis dan menghibur orang lewat ide-ide atau percakapan yang menantang cara berpikir.
+          Selain itu saya menikmati membaca, menonton serial, dan berdiskusi soal tema-tema teologis & mitologi dalam cerita.
+        </p>
+        <div class="chips">
+          <span class="chip">Berpikir Logis</span>
+          <span class="chip">Filsafat</span>
+          <span class="chip">Diskusi Teologi</span>
+          <span class="chip">Membaca & Menonton</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Favorit Hiburan</h3>
+        <p>
+          Anime favorit saya adalah <strong>One Piece</strong>. Untuk serial dan film, saya tertarik pada karya-karya bertema epik dan teologis seperti <em>Game of Thrones</em> atau <em>The Lord of the Rings</em>, serta serial lain yang membangun dunia dan cerita yang dalam.
+        </p>
+      </div>
+
+      <footer>
+        Dibuat dengan ♥ — Givano. (Kartu nama digital sederhana untuk perkenalan diri)
+      </footer>
+    </section>
+
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <div class="card avatar" aria-hidden="true">
+        GJ
+      </div>
+
+      <div class="card contact">
+        <div>
+          <div class="small">Lokasi</div>
+          <div><strong>Sulawesi Tengah, Indonesia</strong></div>
+        </div>
+
+        <div>
+          <div class="small">Peran</div>
+          <div><strong>Pemikir • Penggemar Filsafat & Serial Epik</strong></div>
+        </div>
+
+        <div>
+          <div class="small">Hal favorite</div>
+          <div>One Piece · Film & Serial Teologis · Diskusi</div>
+        </div>
+
+        <!-- contoh tombol (link placeholder) -->
+        <div style="margin-top:10px">
+          <a class="btn" href="#" onclick="alert('Link belum diisi 😊')">Hubungi / Link</a>
+        </div>
+      </div>
+
+      <div class="card" style="text-align:center; font-size:13px;">
+        Mau diedit? Simpan perubahan pada file <code>index.html</code> lalu upload ulang ke GitHub.
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
